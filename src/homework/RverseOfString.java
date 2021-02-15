@@ -8,16 +8,13 @@ public class RverseOfString {
 		Scanner sc = new Scanner(System.in);
 
 		String input = sc.next();
-		String output ="";
+		String output = "";
 
-		char[] out = input.toCharArray();
-
-		for (int i = out.length - 1; i >= 0; i--)
-		{
-			output += out[i];
+		for (int i = input.length() - 1; i >= 0; i--) {
+			output += input.charAt(i);
 		}
 		System.out.print("Reversed string is : ");
-			System.out.println(output);
+		System.out.println(output);
 
 	}
 }

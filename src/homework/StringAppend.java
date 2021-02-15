@@ -11,7 +11,7 @@ public class StringAppend {
 		System.out.println("Enter the 10 strings that are to be appended");
 
 		try {
-			for (int i = 0; i <= 10; i++) {
+			for (int i = 0; i <10; i++) {
 				str[i] = sc.next();
 
 			}
@@ -23,7 +23,7 @@ public class StringAppend {
 			sb = sb.append(str[i]);
 		}
 
-		System.out.println("first 10 are are appended ");
+		System.out.println(" 10 Strings are appended ");
 		System.out.println(sb.toString());
 	}
 

@@ -28,13 +28,14 @@ public class UniqueCaracters {
 
 		}
 		
-		System.out.println(second);
-		System.out.println(first);
+//		System.out.println(second);
+//		System.out.println(first);
 		
 	first.removeAll(second);
 		
-		System.out.println(first);
 		
+		System.out.println(first);
+
 	}
 
 }
