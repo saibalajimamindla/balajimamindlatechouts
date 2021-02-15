@@ -23,7 +23,7 @@ public class OnlyAlphabets {
 		}
 		else
 		{
-			System.out.println("Given string contains special characters");
+			System.out.println("Given string contains special characters or numbers ");
 		}
 	}
 }
