@@ -65,7 +65,7 @@ public class Ex2 {
 		try {
 			p2.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
+	
 			e.printStackTrace();
 		}
 	}
