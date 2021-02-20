@@ -15,6 +15,11 @@ public class Item {
 		quantity = itemQuantity;
 
 	}
+	public Item()
+	{
+		
+	}
+	
 
 	public int getID() {
 		return id;

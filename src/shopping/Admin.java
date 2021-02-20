@@ -1,6 +1,6 @@
 package shopping;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Admin {
@@ -20,7 +20,7 @@ public class Admin {
 		Navigation n = new Navigation();
 
 		while (true) {
-
+			System.out.println("//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 			System.out.println("\n"+"Menu:");
 			System.out.println("1) Add item into inventry" + "\n" + "2) update Quantity/prize from shop" + "\n"
 					+ "3) Remove item from shop" + "\n" + "4) inventry view " + "\n" + "5) Exit " + "\n");

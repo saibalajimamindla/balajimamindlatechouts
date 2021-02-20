@@ -15,25 +15,16 @@ public class UniqueCaracters {
 		ArrayList second = new ArrayList();
 
 		for (int i = 0; i <= str.length() - 1; i++) {
-			
-			if(first.contains(input[i]))
-			{
+
+			if (first.contains(input[i])) {
 				second.add(input[i]);
-			}
-			else
-			{
+			} else {
 				first.add(input[i]);
 			}
-			
 
 		}
-		
-//		System.out.println(second);
-//		System.out.println(first);
-		
-	first.removeAll(second);
-		
-		
+		first.removeAll(second);
+
 		System.out.println(first);
 
 	}

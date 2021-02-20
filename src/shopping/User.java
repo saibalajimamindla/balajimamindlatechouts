@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class User {
 	Inventry inv = new Inventry();
+	Cart c = new Cart();
 	Navigation nav = new Navigation();
 	Scanner sc = new Scanner(System.in);
 
@@ -11,12 +12,14 @@ public class User {
 		int ch=0;
 		int id;
 		int quant;
+		System.out.println("//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 		System.out.println("\n"+"welcome to your cart ");
 		System.out.println("These are the items avilable at store");
 		inv.userView();
 		
 		while(true)
 		{
+			System.out.println(".......................................................................................................................................");
 			System.out.println("Menu :");
 			System.out.println("1) Add item into cart" + "\n" + "2) Remove item from cart" + "\n" + "3) View cart " + "\n" + "4) Checkout " + "\n");
 			try{
@@ -36,21 +39,23 @@ public class User {
 				id = sc.nextInt();
 				System.out.println("Enter the Quantity of item");
 				quant = sc.nextInt();
-				inv.cartAdd(id, quant);
+				c.cartAdd(id, quant);
 				break;
 			case 2:
 				System.out.println("Removing items fron the cart: ");
 				System.out.println("Enter the id of item");
 				id = sc.nextInt();
-				inv.cartRemove(id);
+				c.cartRemove(id);
 				break;
 			case 3:
 				System.out.println("The items in gour cart are: ");
-				inv.cartView();
+				c.cartView();
 				break;
 			case 4:
-				System.out.println("Thanks for shopping with us");
+				c.cartbill();
+				System.out.println("\n"+"Thanks for shopping with us");
 				System.out.println("Please visit again"+"\n");
+				c.clearcart();
 				nav.navigating();
 				
 			 default:

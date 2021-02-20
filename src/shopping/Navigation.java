@@ -12,7 +12,7 @@ public class Navigation {
 		User us = new User();
 		String uid = "saibalaji";
 		String psd = "123456789";
-		System.out.println("                                                       Welcome to the balajimart" + "\n");
+		System.out.println("//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 		System.out.println(" Identify Your self");
 		System.out.println("     1) User" + "\n" + "     2) Admin" + "\n" + "     3) Exit");
 		try
