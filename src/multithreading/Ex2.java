@@ -44,9 +44,9 @@ class Printer03 extends Thread {
 
 public class Ex2 {
 	public static void main(String[] args) {
-		Printer01 p1 = new Printer01();
-		Printer02 p2 = new Printer02();
-		Printer03 p3 = new Printer03();
+		Thread p1 = new Printer01();
+		Thread p2 = new Printer02();
+		Thread p3 = new Printer03();
 		p2.setPriority(4);
 		p1.start();
 		//p1.setPriority(1);
