@@ -3,6 +3,7 @@ package shopping;
 import java.util.Scanner;
 
 public class Admin {
+	int i=0;
 
 	protected void adminIn() {
 
@@ -18,7 +19,7 @@ public class Admin {
 		Inventry inv = new Inventry();
 		Navigation n = new Navigation();
 
-		while (true) {
+		while (i<10) {
 			System.out.println(
 					"//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 			System.out.println("\n" + "Menu:");
